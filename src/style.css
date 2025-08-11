@@ -28,6 +28,11 @@ body {
     overflow: hidden;
 }
 
+a {
+    color: var(--text-gray);
+    text-decoration: none;
+}
+
 .left {
     width: 25vw;
 }
@@ -109,6 +114,110 @@ body {
 #category-icn {
     position: relative;
     transform: translateX(-175%);
+}
+
+.nav-right {
+    justify-content: right;
+    gap: 25px;
+}
+
+.nav-right .links-left {
+    height: 100%;
+}
+
+.nav-right .links-left ul {
+    position: relative;
+    height: 100%;
+    list-style: none;
+    gap: 8px;
+}
+
+.nav-right .links-left ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right .links-left ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-gray);
+    text-decoration: none;
+}
+
+.nav-right .links-left ul li:hover {
+    scale: 1.05;
+    a {
+        color: #fff;
+    }
+}
+
+.nav-right .links-left ul::after {
+    content: '';
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 50%;
+    right: -28px;
+    width: 2px;
+    height: 28px;
+    background-color: #fff;
+}
+
+.nav-right .links-right {
+    display: flex;
+    height: 100%;
+    gap: 35px;
+}
+
+.nav-right .links-right .install {
+    margin-left: 40px;
+    height: 100%;
+    font-size: 14px;    
+    font-weight: 700;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav-right .links-right .install:hover {
+    scale: 1.05;
+    a {
+        color: #fff;
+    }
+}
+
+.nav-right .links-right .sign-in {
+    height: 100%;
+    gap: 18px;
+}
+
+.nav-right .links-right .sign-in a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-right .links-right .sign-in a:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.nav-right .links-right .sign-in span {
+    width: 108px;
+    height: 95%;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.nav-right .links-right .sign-in span:hover {
+    background-color: #f0f0f0;
+    scale: 1.05;
 }
 
 .container {
