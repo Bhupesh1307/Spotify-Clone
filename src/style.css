@@ -4,6 +4,7 @@
 
 :root {
     /* Background Colors */
+    --bg-lighter-gray: #212121;
     --bg-light-gray: #1f1f1f;
     --bg-dark-gray: #121212;
 
@@ -221,12 +222,13 @@ a {
 }
 
 .container {
+    padding: 0 3px 0 3px ;
     width: 100vw;
     flex: 1;
 }
 
 .container .left {
-    padding: 3px 7px 8px 8px;
+    padding: 3px 7px 8px 5px;
     width: 30%;
     height: 100%;
 }
@@ -258,4 +260,59 @@ a {
 
 .container .left .library .addPlaylist:hover {
     background-color: var(--bg-light-gray);
+}
+
+.container .right {
+    padding: 3px 5px 8px 0;
+    width: 70%;
+    height: 100%;
+}
+
+.container .right .playlists {
+    padding: 20px 0 70px 40px;
+    height: 100%;
+    background: linear-gradient(#212121, #121212);
+    border-radius: 8px;
+}
+
+.container .right .playlists a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container .right .playlists a:hover {
+    text-decoration: underline;
+}
+
+.container .right .playlists .cardsContainer {
+    margin-top: 10px;
+}
+
+.container .right .playlists .cardsContainer .card {
+    padding: 12px;
+    width: 185px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container .right .playlists .cardsContainer .card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.container .right .playlists .cardsContainer .card h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container .right .playlists .cardsContainer .card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.container .right .playlists .cardsContainer .card:hover {
+    background-color: var(--bg-lighter-gray);
 }
