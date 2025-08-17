@@ -229,8 +229,7 @@ a {
 
 .container .left {
     padding: 3px 7px 8px 5px;
-    width: 30%;
-    height: 100%;
+    width: 24%;
 }
 
 .container .left .library {
@@ -264,8 +263,7 @@ a {
 
 .container .right {
     padding: 3px 5px 8px 0;
-    width: 70%;
-    height: 100%;
+    flex: 1;
 }
 
 .container .right .playlists {
@@ -290,9 +288,11 @@ a {
 }
 
 .container .right .playlists .cardsContainer .card {
+    position: relative;
     padding: 12px;
     width: 185px;
     height: fit-content;
+    flex-wrap: wrap;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -314,6 +314,21 @@ a {
     color: var(--text-gray);
 }
 
+.container .right .playlists .cardsContainer .card .play {
+    position: absolute;
+    bottom: 76px;
+    right: 18px;
+    padding: 12px;
+    width: 50px;
+    background-color: #3be477;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
 .container .right .playlists .cardsContainer .card:hover {
     background-color: var(--bg-lighter-gray);
+    .play {
+        visibility: visible;
+    }
 }
+
